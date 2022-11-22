@@ -12,23 +12,23 @@ class CatalogController extends AbstractController
     public function category(): Response
     {
         return $this->render('catalog/category.html.twig', [
-            'controller_name' => 'CatalogController',
+            'controller_name' => 'category',
         ]);
     }
 
-    #[Route('/subcategory', name: 'app_subcatalog')]
+    #[Route('/subcategory', name: 'app_subcategory')]
     public function subcategory(): Response
     {
-        return $this->render('catalog/category.html.twig', [
-            'controller_name' => 'CatalogController',
+        return $this->render('catalog/subcategory.html.twig', [
+            'controller_name' => 'subcategory',
         ]);
     }
 
     #[Route('/product', name: 'app_product')]
     public function product(): Response
     {
-        return $this->render('catalog/category.html.twig', [
-            'controller_name' => 'CatalogController',
+        return $this->render('catalog/product.html.twig', [
+            'controller_name' => 'product',
         ]);
     }
 }
