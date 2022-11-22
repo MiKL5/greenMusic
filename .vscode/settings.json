@@ -4,8 +4,6 @@
         "activityBar.background": "#322f72",
         "activityBar.foreground": "#e7e7e7",
         "activityBar.inactiveForeground": "#e7e7e799",
-        "activityBarBadge.background": "#b54f4a",
-        "activityBarBadge.foreground": "#e7e7e7",
         "commandCenter.border": "#e7e7e799",
         "sash.hoverBorder": "#322f72",
         "statusBar.background": "#22204e",
@@ -25,7 +23,9 @@
         "statusBar.debuggingBorder": "#4c4e20",
         "statusBar.debuggingForeground": "#e7e7e7",
         "tab.activeBorder": "#322f72",
-        "titleBar.border": "#22204e"
+        "titleBar.border": "#22204e",
+        "activityBarBadge.background": "#b54f4a",
+        "activityBarBadge.foreground": "#e7e7e7"
     },
     "peacock.color": "#22204E",
     "xd.globalEditor": true,
