@@ -17,17 +17,8 @@ class Category
     #[ORM\Column(length: 80)]
     private ?string $name = null;
 
-    #[ORM\Column(length: 100)]
-    private ?string $wording = null;
 
-    #[ORM\Column(length: 300)]
-    private ?string $description = null;
 
-    #[ORM\Column(length: 15)]
-    private ?string $supplier_reference = null;
-
-    #[ORM\Column(type: Types::DECIMAL, precision: 8, scale: 2)]
-    private ?string $price = null;
 
     public function getId(): ?int
     {
