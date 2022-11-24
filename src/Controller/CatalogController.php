@@ -11,8 +11,11 @@ class CatalogController extends AbstractController
     #[Route('/category', name: 'app_category')]
     public function category(): Response
     {
+        $categories = $repo->findAll();
+
         return $this->render('catalog/category.html.twig', [
             'controller_name' => 'category',
+            'categories' => $categories
         ]);
     }
 

@@ -16,7 +16,16 @@
         "titleBar.inactiveBackground": "#22204e99",
         "titleBar.inactiveForeground": "#e7e7e799",
         "activityBarBadge.background": "#b54f4a",
-        "activityBarBadge.foreground": "#e7e7e7"
+        "activityBarBadge.foreground": "#e7e7e7",
+        "editorGroup.border": "#322f72",
+        "panel.border": "#322f72",
+        "sideBar.border": "#322f72",
+        "statusBar.border": "#22204e",
+        "statusBar.debuggingBackground": "#4c4e20",
+        "statusBar.debuggingBorder": "#4c4e20",
+        "statusBar.debuggingForeground": "#e7e7e7",
+        "tab.activeBorder": "#322f72",
+        "titleBar.border": "#22204e"
     },
     "peacock.color": "#22204E",
     "xd.globalEditor": true,
