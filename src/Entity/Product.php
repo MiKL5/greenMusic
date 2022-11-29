@@ -29,7 +29,7 @@ class Product
 
     #[ORM\Column(length: 15)]
     #[Assert\NotBlank()]
-    private ?string $supplier_reference = null;
+    private ?string $supplier = null;
 
     #[ORM\Column(type: Types::DECIMAL, precision: 8, scale: 2)]
     #[Assert\NotNull()]
@@ -45,6 +45,10 @@ class Product
     )]
     #[Assert\NotBlank()]
     private ?string $image = null;
+
+    #[ORM\ManyToOne(inversedBy: 'products')]
+    #[ORM\JoinColumn(nullable: false)]
+    private ?Category $category = null;
 
     public function getId(): ?int
     {
@@ -87,14 +91,14 @@ class Product
         return $this;
     }
 
-    public function getSupplierReference(): ?string
+    public function getSupplier(): ?string
     {
-        return $this->supplier_reference;
+        return $this->supplier;
     }
 
-    public function setSupplierReference(string $supplier_reference): self
+    public function setSupplier(string $supplier): self
     {
-        $this->supplier_reference = $supplier_reference;
+        $this->supplier = $supplier;
 
         return $this;
     }
@@ -119,6 +123,18 @@ class Product
     public function setImage(string $image): self
     {
         $this->image = $image;
+
+        return $this;
+    }
+
+    public function getCategory(): ?Category
+    {
+        return $this->category;
+    }
+
+    public function setCategory(?Category $category): self
+    {
+        $this->category = $category;
 
         return $this;
     }

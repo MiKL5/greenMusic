@@ -2,41 +2,39 @@
 
 namespace App\Controller;
 
-use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
+use App\Repository\CategoryRepository;
+use App\Repository\ProductRepository;
+use App\Repository\SubcategoryRepository;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;
-use App\Entity\Category;
+use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 
 
 class CatalogController extends AbstractController
 {
     #[Route('/category', name: 'app_category')]
-    public function category(): Response
+    public function category(CategoryRepository $categoryRepository): Response
     {
-        $category = $repoCatalogue->findAll();
-
         return $this->render('catalog/category.html.twig', [
-            'category' => $category
+            'categories' => $categoryRepository->findAll(),
         ]);
     }
 
     #[Route('/subcategory', name: 'app_subcategory')]
-    public function subcategory(): Response
+    public function subcategory(SubcategoryRepository $subcategoryRepository): Response
     {
-        $subcategory = $repoCatalogue->findAll();
+        $subcategory = $subcategoryRepository->findAll();
 
         return $this->render('catalog/subcategory.html.twig', [
-            'subcategory' => 'subcategory',
+            'subcategories' => 'subcategory',
         ]);
     }
 
     #[Route('/product', name: 'app_product')]
-    public function product(): Response
+    public function product(ProductRepository $productRepository): Response
     {
-        $product = $repoCatalogue->findAll();
-
         return $this->render('catalog/product.html.twig', [
-            'product' => $product
+            'products' => $productRepository->findAll()
         ]);
     }
 }
