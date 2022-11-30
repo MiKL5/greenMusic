@@ -10,3 +10,9 @@ body {
 @tailwind utilities;
 
 /*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiYXBwLmNzcyIsIm1hcHBpbmdzIjoiOzs7QUFBQTtJQUNJLDJCQUEyQjtBQUMvQjs7QUFFQSxjQUFjO0FBQ2Qsb0JBQW9CO0FBQ3BCLG1CQUFtQixDIiwic291cmNlcyI6WyJ3ZWJwYWNrOi8vLy4vYXNzZXRzL3N0eWxlcy9hcHAuY3NzIl0sInNvdXJjZXNDb250ZW50IjpbImJvZHkge1xuICAgIGJhY2tncm91bmQtY29sb3I6IGxpZ2h0Z3JheTtcbn1cblxuQHRhaWx3aW5kIGJhc2U7XG5AdGFpbHdpbmQgY29tcG9uZW50cztcbkB0YWlsd2luZCB1dGlsaXRpZXM7Il0sIm5hbWVzIjpbXSwic291cmNlUm9vdCI6IiJ9*/
+
+@layer base {
+  html {
+    font-family : Proxima-Nova, sans-serif;
+  }
+}
