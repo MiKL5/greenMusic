@@ -100,11 +100,11 @@ class __TwigTemplate_1c482bb3f81fef41fe98fd42e0af86b7 extends Template
     <ul>
         <li>Your controller at <code><a href=\"";
         // line 16
-        echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\CodeExtension']->getFileLink("C:/Users/miklg/source/repos/greenMusic/src/Controller/HomeController.php", 0), "html", null, true);
+        echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\CodeExtension']->getFileLink("src/Controller/HomeController.php", 0), "html", null, true);
         echo "\">src/Controller/HomeController.php</a></code></li>
         <li>Your template at <code><a href=\"";
         // line 17
-        echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\CodeExtension']->getFileLink("C:/Users/miklg/source/repos/greenMusic/templates/home/index.html.twig", 0), "html", null, true);
+        echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\CodeExtension']->getFileLink("templates/home/index.html.twig", 0), "html", null, true);
         echo "\">templates/home/index.html.twig</a></code></li>
     </ul>
 </div>
@@ -149,8 +149,8 @@ class __TwigTemplate_1c482bb3f81fef41fe98fd42e0af86b7 extends Template
 
     This friendly message is coming from:
     <ul>
-        <li>Your controller at <code><a href=\"{{ 'C:/Users/miklg/source/repos/greenMusic/src/Controller/HomeController.php'|file_link(0) }}\">src/Controller/HomeController.php</a></code></li>
-        <li>Your template at <code><a href=\"{{ 'C:/Users/miklg/source/repos/greenMusic/templates/home/index.html.twig'|file_link(0) }}\">templates/home/index.html.twig</a></code></li>
+        <li>Your controller at <code><a href=\"{{ 'src/Controller/HomeController.php'|file_link(0) }}\">src/Controller/HomeController.php</a></code></li>
+        <li>Your template at <code><a href=\"{{ 'templates/home/index.html.twig'|file_link(0) }}\">templates/home/index.html.twig</a></code></li>
     </ul>
 </div>
 {% endblock %}

@@ -100,11 +100,11 @@ class __TwigTemplate_afc4082c2a6e6a0e73edcc08bbc8c62b extends Template
     <ul>
         <li>Your controller at <code><a href=\"";
         // line 16
-        echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\CodeExtension']->getFileLink("C:/Users/miklg/source/repos/greenMusic/src/Controller/CatalogController.php", 0), "html", null, true);
+        echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\CodeExtension']->getFileLink("src/Controller/CatalogController.php", 0), "html", null, true);
         echo "\">src/Controller/CatalogController.php</a></code></li>
         <li>Your template at <code><a href=\"";
         // line 17
-        echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\CodeExtension']->getFileLink("C:/Users/miklg/source/repos/greenMusic/templates/catalog/index.html.twig", 0), "html", null, true);
+        echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\CodeExtension']->getFileLink("templates/catalog/index.html.twig", 0), "html", null, true);
         echo "\">templates/catalog/index.html.twig</a></code></li>
     </ul>
 </div>
@@ -149,8 +149,8 @@ class __TwigTemplate_afc4082c2a6e6a0e73edcc08bbc8c62b extends Template
 
     This friendly message is coming from:
     <ul>
-        <li>Your controller at <code><a href=\"{{ 'C:/Users/miklg/source/repos/greenMusic/src/Controller/CatalogController.php'|file_link(0) }}\">src/Controller/CatalogController.php</a></code></li>
-        <li>Your template at <code><a href=\"{{ 'C:/Users/miklg/source/repos/greenMusic/templates/catalog/index.html.twig'|file_link(0) }}\">templates/catalog/index.html.twig</a></code></li>
+        <li>Your controller at <code><a href=\"{{ 'src/Controller/CatalogController.php'|file_link(0) }}\">src/Controller/CatalogController.php</a></code></li>
+        <li>Your template at <code><a href=\"{{ 'templates/catalog/index.html.twig'|file_link(0) }}\">templates/catalog/index.html.twig</a></code></li>
     </ul>
 </div>
 {% endblock %}
