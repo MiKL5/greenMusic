@@ -29,5 +29,13 @@
     },
     "peacock.color": "#22204E",
     "xd.globalEditor": true,
-    "xd.lastPackage": "/home/moi/Bureau/deposits/greenMusic/mockup"
+    "xd.lastPackage": "/home/moi/Bureau/deposits/greenMusic/mockup",
+    "files.autoSave": "onWindowChange",
+    "emmet.includeLanguages": {
+        "php": "html",
+        "twig": "html"
+    },
+    "emmet.variables": {
+        "lang": "fr"
+    }
 }
