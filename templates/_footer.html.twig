@@ -7,29 +7,29 @@
 
 		<div>
 			<div>
-				{# <div>
-									<h3>CATÉGORIE</h3>
-									{% for category in categories %}
-										{% if category.parent == null %}
-											<ul>
+				<div>
+					<h3>CATÉGORIE</h3>
+					{% for category in categories %}
+						{% if category.parent == null %}
+							<ul>
+								<li>
+									<div>
+										{{ category.name }}
+									</div>
+									<div class="z-10 hidden bg-white divide-y divide-gray-100 rounded shadow w-44 dark:bg-gray-700">
+										<ul>
+											{% if category.parent != null %}
 												<li>
-													<div>
-														{{ category.name }}
-													</div>
-													<div class="z-10 hidden bg-white divide-y divide-gray-100 rounded shadow w-44 dark:bg-gray-700">
-														<ul>
-															{% if category.parent != null %}
-																<li>
-																	<a href="{% if (category.products)|length == 0 %}{{path ('app_category', {'id' : category.id })}}{% else %}{{path ('app_product', {'id' : category.id })}}{% endif %}" class="block px-4 py-2 hover:scale-110 hover:bg-indigo-800 hover:text-white">{{ category.name }}</a>
-																</li>
-															{% endif %}
-														</ul>
-													</div>
+													<a href="{% if (category.products)|length == 0 %}{{path ('app_category', {'id' : category.id })}}{% else %}{{path ('app_product', {'id' : category.id })}}{% endif %}" class="block px-4 py-2 hover:scale-110 hover:bg-indigo-800 hover:text-white">{{ category.name }}</a>
 												</li>
-											</ul>
-										{% endif %}
-									{% endfor %}
-								</div> #}
+											{% endif %}
+										</ul>
+									</div>
+								</li>
+							</ul>
+						{% endif %}
+					{% endfor %}
+				</div>
 
 
 			</div>
