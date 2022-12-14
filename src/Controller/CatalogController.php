@@ -2,17 +2,18 @@
 
 namespace App\Controller;
 
+use App\Entity\Category;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;
 
 class CatalogController extends AbstractController
 {
-    #[Route('/category', name: 'app_category')]
-    public function category(): Response
+    #[Route('/category/{id}', name: 'app_category')]
+    public function category(Category $id): Response
     {
         return $this->render('catalog/category.html.twig', [
-            'controller_name' => 'CategoryController',
+            'category' => $id,
         ]);
     }
 

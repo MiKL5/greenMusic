@@ -1,6 +1,7 @@
 # Translation english to french
-Welcome to Green Music!: Bienvenue à Green Music !
+# translations/messages.fr.yaml
 Hello: Bonjour
+Welcome to Green Music!: Bienvenue à Green Music !
 accueil_footer: 
 Register: S'enregistrer
 Password: Mot de passe
