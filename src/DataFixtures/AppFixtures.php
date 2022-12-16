@@ -29,14 +29,16 @@ class AppFixtures extends Fixture
         $p100->setName("Clarinette en Sib")
              ->setWording("Système Allemand")
              ->setDescription("Modèle Solliste fabriqué à la main, 27 clés, 5 anneaux, clé Mi/Fa au niveau de Pavillon, bec M3D, ligature BG L7 et étui incl.")
-             ->setPrice(5397.99);
+             ->setPrice(5397.99)
+             ->SetImages("images/product/imageTest.png");
         $manager->persist($p100);
 
         $p110 = new Product();
         $p110->setName("Clarinette en Mib")
              ->setWording("Système Boehm")
              ->setDescription("Modèle BC1256L-2-0, 19 clés, 6 anneaux, Clé de correction du Fa, Etui, ligature, couvre-bec et accessoires inc.")
-             ->setPrice(7085.99);
+             ->setPrice(7085.99)
+             ->SetImages("images/product/imageTest.png");
         $manager->persist($p110);
 
 
@@ -50,7 +52,8 @@ class AppFixtures extends Fixture
         $p111->setName("Flûte à Bec Sopranos")
               ->setWording("Doigté Baroque")
               ->setDescription("En poirier naturel, double trou, trousse en coton et accessoires d'entretien inclus.")
-              ->setPrice(66.99);
+              ->setPrice(66.99)
+             ->SetImages("images/product/imageTest.png");
         $manager->persist($p111);
 
 
@@ -64,7 +67,8 @@ class AppFixtures extends Fixture
         $p120->setName("Flûte Traversière")
               ->setWording("Plâteau plein")
               ->setDescription("Fabriqué à la main, Paroi épaisse, en argent massif, cheminées non soudées, plâteau pleins, écouvillon et étui inclu.")
-              ->setPrice(9666.99);
+              ->setPrice(9666.99)
+             ->SetImages("images/product/imageTest.png");
         $manager->persist($p120);
 
 
