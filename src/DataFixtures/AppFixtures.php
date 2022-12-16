@@ -185,6 +185,7 @@ class AppFixtures extends Fixture
             ->setParentCategory($c4);
         $manager->persist($s44);
 
+        // cette boucle ajoute des produits factis pour tester la bdd
         // for ($i=0; $i<20; $i++)
         // {
         // $produit = new Product();
