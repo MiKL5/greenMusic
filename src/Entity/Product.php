@@ -34,6 +34,9 @@ class Product
     #[Assert\Positive()]
     private ?string $price = null;
 
+    #[ORM\Column(length: 600)]
+    private ?string $images = null;
+
     public function getId(): ?int
     {
         return $this->id;
@@ -83,6 +86,18 @@ class Product
     public function setPrice(string $price): self
     {
         $this->price = $price;
+
+        return $this;
+    }
+
+    public function getImages(): ?string
+    {
+        return $this->images;
+    }
+
+    public function setImages(string $images): self
+    {
+        $this->images = $images;
 
         return $this;
     }
