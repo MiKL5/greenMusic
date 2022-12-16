@@ -30,7 +30,7 @@
     "peacock.color": "#22204E",
     "xd.globalEditor": true,
     "xd.lastPackage": "/home/moi/Bureau/deposits/greenMusic/mockup",
-    "files.autoSave": "onWindowChange",
+    "files.autoSave": "onFocusChange",
     "emmet.includeLanguages": {
         "php": "html",
         "twig": "html"

@@ -2,7 +2,8 @@
 # translations/messages.fr.yaml
 Hello: Bonjour
 Welcome to Green Music!: Bienvenue à Green Music !
-accueil_footer: 
+# accueil_footer: 
 Register: S'enregistrer
 Password: Mot de passe
 Agree Terms: Accepter les conditions
+Sign in: Connexion
