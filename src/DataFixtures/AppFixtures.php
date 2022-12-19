@@ -77,6 +77,14 @@ class AppFixtures extends Fixture
             ->setParentCategory($c1);
         $manager->persist($s13);
 
+                $p130 = new Product();
+        $p130->setName("Flûte Traversière")
+              ->setWording("Plâteau plein")
+              ->setDescription("Fabriqué à la main, Paroi épaisse, en argent massif, cheminées non soudées, plâteau pleins, écouvillon et étui inclu.")
+              ->setPrice(9666.99)
+             ->SetImages("images/product/imageTest.png");
+        $manager->persist($p130);
+
         $s14 = new Category();
         $s14->setName("Trompette")
             ->setParentCategory($c1);
@@ -186,15 +194,16 @@ class AppFixtures extends Fixture
         $manager->persist($s44);
 
         // cette boucle ajoute des produits factis pour tester la bdd
-        // for ($i=0; $i<20; $i++)
+        
+        // for ($i=0; $i<200000; $i++)
         // {
         // $produit = new Product();
-            // $produit->setName('Product'.$i)
+        //     $produit->setName('Product'.$i)
         //         ->setWording('plouf')
         //         ->setDescription ('sqdqsdq'.$i)
-        //         ->setSupplier('Fender')
+        //         // ->setSupplier('Fender')
         //         ->setPrice(mt_rand(1, 100))
-        //         ->setImage('/')
+        //         ->setImages('/')
         //         ->setCategory($s10);
         //     $manager->persist($produit);    
         // }
