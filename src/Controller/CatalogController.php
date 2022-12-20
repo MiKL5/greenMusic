@@ -21,7 +21,7 @@ class CatalogController extends AbstractController
     public function subcategory(): Response
     {
         return $this->render('catalog/subcategory.html.twig', [
-            'controller_name' => 'SubCategoryController',
+            'controller_name' => 'SubCategory',
         ]);
     }
 
@@ -29,7 +29,7 @@ class CatalogController extends AbstractController
     public function product(): Response
     {
         return $this->render('catalog/product.html.twig', [
-            'controller_name' => 'ProductController',
+            'controller_name' => 'Product',
         ]);
     }
 }

@@ -7,3 +7,10 @@ Register: S'enregistrer
 Password: Mot de passe
 Agree Terms: Accepter les conditions
 Sign in: Connexion
+No reset password token found in the URL or in the session: Aucun jeton de réinitialisation du mot de passe trouvé dans l'URL ou dans la session
+The Green Music team: L'équipe Green Music
+Your password reset request: Votre demande de réinitialisation de mot de passe
+This method can be blank - it will be intercepted by the logout key on your firewall: Cette méthode peut être vide - elle sera interceptée par la clé de déconnexion de votre pare-feu
+Please Confirm your Email: Veillez confirmer votre e-mail
+Success: Succés
+Your email address has been verified: Votre adresse e-mail a bien été vérifier
