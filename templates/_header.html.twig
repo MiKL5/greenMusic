@@ -69,41 +69,47 @@
 
 			<!-- Notifications -->
 			<li class="nav-item">
-				<a class="nav-link text-light me-3 " href="{{path('app_cart')}}">Cart
+				<a class="nav-link text-light me-3 " href="{{path('app_cart')}}">
+				<script src="https://cdn.lordicon.com/fudrjiwc.js"></script>
+				<lord-icon src="https://cdn.lordicon.com/lpddubrl.json" trigger="hover" colors="primary:#30e849,secondary:#242424" stroke="75" style="width:25px;height:25px"></lord-icon>
 					<span class="badge rounded-pill badge-notification bg-danger">0</span>
 				</a>
 			</li>
 
 			{# <div class="dropdown">
-										<a
-											class="text-reset me-3 dropdown-toggle hidden-arrow" href="{{path("app_cart")}}" id="navbarDropdownMenuLink" role="button" data-mdb-toggle="dropdown" aria-expanded="false">
-											<i class="fas fa-bell"></i>
-											<span class="badge rounded-pill badge-notification bg-danger">Cart</span>
-										</a>
-										<ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdownMenuLink">
-											<li>
-												<a class="dropdown-item" href="#">Some news</a>
-											</li>
-											<li>
-												<a class="dropdown-item" href="#">Another news</a>
-											</li>
-											<li>
-												<a class="dropdown-item" href="#">Something else here</a>
-											</li>
-										</ul>
-									</div> #}
+				<a
+					class="text-reset me-3 dropdown-toggle hidden-arrow" href="{{path("app_cart")}}" id="navbarDropdownMenuLink" role="button" data-mdb-toggle="dropdown" aria-expanded="false">
+					<i class="fas fa-bell"></i>
+					<span class="badge rounded-pill badge-notification bg-danger">Cart</span>
+				</a>
+				<ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdownMenuLink">
+					<li>
+						<a class="dropdown-item" href="#">Some news</a>
+					</li>
+					<li>
+						<a class="dropdown-item" href="#">Another news</a>
+					</li>
+					<li>
+						<a class="dropdown-item" href="#">Something else here</a>
+					</li>
+				</ul>
+			</div> #}
 			<!-- Avatar -->
 			<div class="dropdown">
 				<a class="dropdown-toggle d-flex align-items-center hidden-arrow" href="" id="navbarDropdownMenuAvatar" role="button" data-mdb-toggle="dropdown" aria-expanded="false">
-					<img src="https://mdbcdn.b-cdn.net/img/new/avatars/2.webp" class="rounded-circle" height="25" alt="Black and White Portrait of a Man" loading="lazy"/>
+					<img
+					src="https://mdbcdn.b-cdn.net/img/new/avatars/2.webp" class="rounded-circle" height="25" alt="Black and White Portrait of a Man" loading="lazy"/>
 					{# <img src="{{ path('avatar', {'id': user.id}) }}" alt="Avatar de l'utilisateur">User #}
-				</a>
-				<ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdownMenuAvatar">
-					<li>
-						{# <a class="dropdown-item" href="{{path('app_user')}}">My profile</a> #}
-					</li>
-					<li>
-						<a class="dropdown-item" href="#">Settings</a>
+					<ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdownMenuAvatar">
+						<li>
+							{# <a class="dropdown-item" href="{{path('app_user')}}">My profile</a> #}
+						</li>
+						<li>
+							<script src="https://cdn.lordicon.com/fudrjiwc.js"></script>
+							<lord-icon src="https://cdn.lordicon.com/ljvjsnvh.json" trigger="loop" colors="primary:#30e849,secondary:#242424" stroke="75" state="hover-2" style="width:32px;height:32px"></lord-icon>
+						</li>
+						{# </a> #}
+						<a class="dropdown-item" href="#">Settings / profile</a>
 					</li>
 					<li>
 						<a class="dropdown-item" href="{{path('app_order')}}">Orders</a>
