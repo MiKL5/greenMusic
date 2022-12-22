@@ -3,6 +3,7 @@
 namespace App\Entity;
 
 use App\Repository\UserRepository;
+use Doctrine\DBAL\Types\Types;
 use Doctrine\ORM\Mapping as ORM;
 use Symfony\Bridge\Doctrine\Validator\Constraints\UniqueEntity;
 use Symfony\Component\Security\Core\User\PasswordAuthenticatedUserInterface;
@@ -31,6 +32,24 @@ class User implements UserInterface, PasswordAuthenticatedUserInterface
 
     #[ORM\Column(type: 'boolean')]
     private $isVerified = false;
+
+    #[ORM\Column(length: 50, nullable: true)]
+    private ?string $name = null;
+
+    #[ORM\Column(length: 50, nullable: true)]
+    private ?string $firstname = null;
+
+    #[ORM\Column(length: 300, nullable: true)]
+    private ?string $adress = null;
+
+    #[ORM\Column(length: 6, nullable: true)]
+    private ?string $zipcode = null;
+
+    #[ORM\Column(length: 50, nullable: true)]
+    private ?string $city = null;
+
+    #[ORM\Column(type: Types::DECIMAL, precision: 14, scale: '0', nullable: true)]
+    private ?string $phonenumber = null;
 
     public function getId(): ?int
     {
@@ -110,6 +129,78 @@ class User implements UserInterface, PasswordAuthenticatedUserInterface
     public function setIsVerified(bool $isVerified): self
     {
         $this->isVerified = $isVerified;
+
+        return $this;
+    }
+
+    public function getname(): ?string
+    {
+        return $this->name;
+    }
+
+    public function setname(?string $name): self
+    {
+        $this->name = $name;
+
+        return $this;
+    }
+
+    public function getfirstname(): ?string
+    {
+        return $this->firstname;
+    }
+
+    public function setfirstname(?string $firstname): self
+    {
+        $this->firstname = $firstname;
+
+        return $this;
+    }
+
+    public function getadress(): ?string
+    {
+        return $this->adress;
+    }
+
+    public function setadress(?string $adress): self
+    {
+        $this->adress = $adress;
+
+        return $this;
+    }
+
+    public function getZipcode(): ?string
+    {
+        return $this->zipcode;
+    }
+
+    public function setZipcode(?string $zipcode): self
+    {
+        $this->zipcode = $zipcode;
+
+        return $this;
+    }
+
+    public function getcity(): ?string
+    {
+        return $this->city;
+    }
+
+    public function setcity(?string $city): self
+    {
+        $this->city = $city;
+
+        return $this;
+    }
+
+    public function getPhonenumber(): ?string
+    {
+        return $this->phonenumber;
+    }
+
+    public function setPhonenumber(?string $phonenumber): self
+    {
+        $this->phonenumber = $phonenumber;
 
         return $this;
     }

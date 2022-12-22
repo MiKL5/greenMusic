@@ -2,15 +2,35 @@
 
 namespace App\DataFixtures;
 
+use App\Entity\User;
 use App\Entity\Product;
 use App\Entity\Category;
 use Doctrine\Persistence\ObjectManager;
 use Doctrine\Bundle\FixturesBundle\Fixture;
+use Symfony\Component\PasswordHasher\Hasher\UserPasswordHasherInterface;
 
 class AppFixtures extends Fixture
 {
-    public function load(ObjectManager $manager): void
+        private $hasher;
+
+    public function __construct(UserPasswordHasherInterface $h)
     {
+        $this->hasher = $h;
+    }
+
+    public function load(ObjectManager $manager): void
+
+    {
+    $u1 = new User();
+    // $u1->setFirstname("Prenom");
+    // $u1->setName("NOM");
+    $u1->setEmail("admin@greenmusic.com");
+    $u1->setRoles(["ROLE_ADMIN"]);
+    $u1->setPassword($this->hasher->hashPassword($u1,"admin123"));
+    $manager->persist($u1);
+    
+
+    
         // $c désigne une catégorie + un chiffre dés 1
         // $s désigne une sous-catégorie , sont numéro reprend celui de la cétérogie + celui de la sous-catégorie dés 0
         // $p désigne un produit, sont numéro reprend ceux de la catégorie et la sous-catégorie + celui du produit dés 0
